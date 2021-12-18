@@ -1051,7 +1051,128 @@
           <br />
           Final Price - ${finalamount}
           `,
-        }).then((message) => window.location.replace('./thankyou.html'));
+        }).then((message) => {
+          document.getElementById("step4").style.display = "none";
+          document.getElementById("step6").style.display = "none";
+          document.getElementById("step9").style.display = "none";
+          document.getElementById("step12").style.display = "none";
+          document.getElementById("step15").style.display = "none";
+          document.getElementById('finalamount').innerHTML = 0;
+          Array.from(document.getElementsByClassName('apfc4steps')).forEach((e) => {
+            e.style.display = "none";
+          })
+          Array.from(document.getElementsByClassName('apfc6steps')).forEach((e) => {
+            e.style.display = "none";
+          })
+          Array.from(document.getElementsByClassName('apfc9steps')).forEach((e) => {
+            e.style.display = "none";
+          })
+          Array.from(document.getElementsByClassName('apfc12steps')).forEach((e) => {
+            e.style.display = "none";
+          })
+          Array.from(document.getElementsByClassName('apfc15steps')).forEach((e) => {
+            e.style.display = "none";
+          })
+          Array.from(document.getElementsByClassName('cont2')).forEach((e) => {
+            e.style.display = "none";
+          })
+          Array.from(document.getElementsByClassName('cont5')).forEach((e) => {
+            e.style.display = "none";
+          })
+          Array.from(document.getElementsByClassName('cont7')).forEach((e) => {
+            e.style.display = "none";
+          })
+          Array.from(document.getElementsByClassName('cont12')).forEach((e) => {
+            e.style.display = "none";
+          })
+          Array.from(document.getElementsByClassName('cont16')).forEach((e) => {
+            e.style.display = "none";
+          })
+          Array.from(document.getElementsByClassName('cont20')).forEach((e) => {
+            e.style.display = "none";
+          })
+          Array.from(document.getElementsByClassName('cont25')).forEach((e) => {
+            e.style.display = "none";
+          })
+          Array.from(document.getElementsByClassName('cont33')).forEach((e) => {
+            e.style.display = "none";
+          })
+          Array.from(document.getElementsByClassName('cont40')).forEach((e) => {
+            e.style.display = "none";
+          })
+          Array.from(document.getElementsByClassName('cont50')).forEach((e) => {
+            e.style.display = "none";
+          })
+          Array.from(document.getElementsByClassName('cont60')).forEach((e) => {
+            e.style.display = "none";
+          })
+          Array.from(document.getElementsByClassName('cont75')).forEach((e) => {
+            e.style.display = "none";
+          })
+          Array.from(document.getElementsByClassName('cont100')).forEach((e) => {
+            e.style.display = "none";
+          })
+          document.getElementById("btn").disabled = true;
+          document.getElementById("btn").style.cursor = "not-allowed";
+
+          selectedRelay = null;
+          stepCount = null;
+          selectedCombo = null;
+          contactor2_5 = 0;
+          contactor5 = 0;
+          contactor7_5 = 0;
+          contactor12 = 0;
+          contactor16 = 0;
+          contactor20 = 0;
+          contactor25 = 0;
+          contactor33 = 0;
+          contactor40 = 0;
+          contactor50 = 0;
+          contactor60 = 0;
+          contactor75 = 0;
+          contactor100 = 0;
+          apfc4Price = null;
+          apfc6Price = null;
+          apfc9Price = null;
+          apfc12Price = null;
+          apfc15Price = null;
+          contactorPrice = null;
+          unit = document.createElement('div');
+          type = document.createElement('div');
+          price = document.createElement('div');
+          total = document.createElement('div');
+          finalamount = 0;
+          step4count = 0;
+          step6count = 0;
+          step9count = 0;
+          step12count = 0;
+          step15count = 0;
+          document.getElementById('combo').value = "";
+          document.getElementById("kvar2.5").value = null;
+          document.getElementById("kvar5").value = null;
+          document.getElementById("kvar7.5").value = null;
+          document.getElementById("kvar12").value = null;
+          document.getElementById("kvar16").value = null;
+          document.getElementById("kvar20").value = null;
+          document.getElementById("kvar25").value = null;
+          document.getElementById("kvar33").value = null;
+          document.getElementById("kvar40").value = null;
+          document.getElementById("kvar50").value = null;
+          document.getElementById("kvar60").value = null;
+          document.getElementById("kvar75").value = null;
+          document.getElementById("kvar100").value = null;
+          document.getElementById("step4count").value = null;
+          document.getElementById("step6count").value = null;
+          document.getElementById("step9count").value = null;
+          document.getElementById("step12count").value = null;
+          document.getElementById("step15count").value = null;
+          document.getElementById("name").value = null;
+          document.getElementById("email").value = null;
+          document.getElementById("city").value = null;
+          document.getElementById("mobile").value = null;
+
+          alert("Thanks for you response. Our nearest authorised dealer will contact you soon.")
+        });
       }
 
       form.addEventListener("submit", sendmail);
