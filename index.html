@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entes " Super Saver "APFC relay + Cap duty Contactor COMBO "</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: wheat;
+    }
+
+    .container {
+      width: 60%;
+      margin: auto;
+    }
+
+    @media screen and (min-width: 1801px) {
+      .container {
+        width: 40%;
+        margin: auto;
+      }
+    }
+
+    @media screen and (min-width: 1501px) and (max-width: 1800px) {
+      .container {
+        width: 50%;
+        margin: auto;
+      }
+    }
+
+    @media screen and (min-width: 1201px) and (max-width: 1500px) {
+      .container {
+        width: 60%;
+        margin: auto;
+      }
+    }
+
+    @media screen and (min-width: 951px) and (max-width: 1200px) {
+      .container {
+        width: 70%;
+        margin: auto;
+      }
+    }
+
+    @media screen and (min-width: 781px) and (max-width: 950px) {
+      .container {
+        width: 80%;
+        margin: auto;
+      }
+    }
+
+    @media screen and (max-width: 780px) {
+      .container {
+        width: 100%;
+        margin: auto;
+      }
+    }
+
+    .header-img {
+      width: 100%;
+      height: 200px;
+    }
+
+    .heading-1 {
+      margin: auto;
+      text-align: center;
+    }
+
+    .info {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        width: 100%;
+        margin: auto;
+      }
+
+      .header-img {
+        width: 100%;
+        height: auto;
+      }
+
+      .heading-1 {
+        text-align: center;
+        font-size: 24px;
+      }
+
+      .info {
+        font-size: 20px;
+      }
+    }
+
+    .card {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      border: 1px solid #777;
+      margin: 20px 0;
+      min-width: 600px;
+    }
+
+    #combo {
+      width: 200px;
+      height: 40px;
+      border-radius: 5px;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .options:nth-child(odd) {
+      background-color: rgb(230, 227, 227);
+    }
+
+    .options:nth-child(even) {
+      background-color: #fafafa;
+    }
+
+    .required {
+      color: red;
+    }
+
+    .subtext {
+      font-size: 12px;
+    }
+
+    .td-label {
+      width: 75px;
+      height: 30px;
+    }
+
+    .input-box {
+      width: 250px;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .btn {
+      width: 130px;
+      height: 35px;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: rgb(236, 161, 22);
+      margin-top: -20px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+
+    .saved {
+      position: relative;
+      top: 20px;
+      left: -120px;
+      font-size: 14px;
+    }
+
+    .discounted {
+      position: relative;
+      left: 20px;
+    }
+
+    .finalprice {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+    }
+
+    .unit {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      line-height: 4;
+    }
+
+    .itemtype {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      line-height: 4;
+    }
+
+    .price {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      line-height: 4;
+    }
+
+    .total {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      line-height: 4;
+    }
+
+    .head {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .sublist {
+      margin-left: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img class="header-img" src="./logo.jpeg" alt="logo" />
+      <div class="card card1">
+        <h1 class="heading-1">
+          Entes " Super Saver "APFC relay + Cap duty Contactor COMBO "
+        </h1>
+        <p class="info">
+          Avail SPECIAL Package PRICE Offer directly from ENTES. <br />
+          Pls select your APFC relay and Contactor requirement and submit.
+          <br>
+          <br>
+          <b>*You must select atleast one apfc relay.</b>
+        </p>
+      </div>
+    </header>
+    <section>
+      <form class="contactform" name="myform" method="post">
+        <div class="card">
+          <label for="combo" style="font-weight: bold;">Select your SUPER SAVER COMBO Pack</label>
+          <br />
+          <br />
+          <select name="combo" id="combo" onchange="selectCombo()">
+            <option class="options" value="">Select</option>
+            <option class="options" value="4Stage">4 Stage COMBO</option>
+            <option class="options" value="6Stage">6 Stage COMBO</option>
+            <option class="options" value="9Stage">9 Stage COMBO</option>
+            <option class="options" value="12Stage">12 Stage COMBO</option>
+            <option class="options" value="15tage">15 Stage COMBO</option>
+          </select>
+        </div>
+        <div class="card">
+          <label for="relaytype" style="font-weight: bold;">Type of APFC relay required?
+            <span class="required">*</span></label>
+          <br />
+          <br />
+          <br />
+          1 CT ( Single CT : for
+          balance loads ) <br />
+          <br>
+          <div class="sublist">
+
+            4 Step
+            <input type="number" name="step4count" id="step4count" onkeyup="valueChange('step4');">
+            <span id="step4">
+
+            </span>
+            <br />
+            <br />
+            6 Step
+            <input type="number" name="step6count" id="step6count" onkeyup="valueChange('step6');">
+            <span id="step6">
+
+            </span>
+            <br />
+          </div>
+          <br>
+          <br>
+          3 CT ( Three CT : for
+          Unbalance loads)
+          <br>
+          <br>
+          <div class="sublist">
+            9 Step
+            <input type="number" name="step9count" id="step9count" onkeyup="valueChange('step9');">
+            <span id="step9">
+
+            </span>
+            <br />
+            <br />
+            12 Step
+            <input type="number" name="step12count" id="step12count" onkeyup="valueChange('step12');">
+            <span id="step12">
+
+            </span>
+            <br />
+            <br />
+            15 Step
+            <input type="number" name="step15count" id="step15count" onkeyup="valueChange('step15');">
+            <span id="step15">
+
+            </span>
+            <br />
+            <br />
+          </div>
+        </div>
+        <div class="card">
+          <label for="contactor" style="font-weight: bold;"> Contactors ratings and Quantities </label>
+          <br />
+          <br />
+          <br />
+          <table>
+            <tr>
+              <td class="td-label"><label for="kvar2.5">2.5 Kvar</label></td>
+              <td>
+                <input type="number" name="Kvar2.5" id="kvar2.5" min="0" onkeyup="selectContactor('kvar2.5')" />
+              </td>
+            </tr>
+            <tr>
+              <td class="td-label"><label for="kvar5">5 Kvar</label></td>
+              <td><input type="number" name="Kvar5" id="kvar5" min="0" onkeyup="selectContactor('kvar5')" /></td>
+            </tr>
+            <tr>
+              <td class="td-label"><label for="kvar7.5">7.5 Kvar</label></td>
+              <td>
+                <input type="number" name="Kvar7.5" id="kvar7.5" min="0" onkeyup="selectContactor('kvar7.5')" />
+              </td>
+            </tr>
+            <tr>
+              <td class="td-label"><label for="kvar12">12 Kvar</label></td>
+              <td>
+                <input type="number" name="Kvar12" id="kvar12" min="0" onkeyup="selectContactor('kvar12')" />
+              </td>
+            </tr>
+            <tr>
+              <td class="td-label"><label for="kvar16">16 Kvar</label></td>
+              <td>
+                <input type="number" name="Kvar16" id="kvar16" min="0" onkeyup="selectContactor('kvar16')" />
+              </td>
+            </tr>
+            <tr>
+              <td class="td-label"><label for="kvar20">20 Kvar</label></td>
+              <td>
+                <input type="number" name="Kvar20" id="kvar20" min="0" onkeyup="selectContactor('kvar20')" />
+              </td>
+            </tr>
+            <tr>
+              <td class="td-label"><label for="kvar25">25 Kvar</label></td>
+              <td>
+                <input type="number" name="Kvar25" id="kvar25" min="0" onkeyup="selectContactor('kvar25')" />
+              </td>
+            </tr>
+            <tr>
+              <td class="td-label"><label for="kvar33">33 Kvar</label></td>
+              <td>
+                <input type="number" name="Kvar33" id="kvar33" min="0" onkeyup="selectContactor('kvar33')" />
+              </td>
+            </tr>
+            <tr>
+              <td class="td-label"><label for="kvar40">40 Kvar</label></td>
+              <td>
+                <input type="number" name="Kvar40" id="kvar40" min="0" onkeyup="selectContactor('kvar40')" />
+              </td>
+            </tr>
+            <tr>
+              <td class="td-label"><label for="kvar50">50 Kvar</label></td>
+              <td>
+                <input type="number" name="Kvar50" id="kvar50" min="0" onkeyup="selectContactor('kvar50')" />
+              </td>
+            </tr>
+            <tr>
+              <td class="td-label"><label for="kvar60">60 Kvar</label></td>
+              <td>
+                <input type="number" name="Kvar60" id="kvar60" min="0" onkeyup="selectContactor('kvar60')" />
+              </td>
+            </tr>
+            <tr>
+              <td class="td-label"><label for="kvar75">75 Kvar</label></td>
+              <td>
+                <input type="number" name="Kvar75" id="kvar75" min="0" onkeyup="selectContactor('kvar75')" />
+              </td>
+            </tr>
+            <tr style="display: none;">
+              <td class="td-label"><label for="kvar100">100 Kvar</label></td>
+              <td>
+                <input type="number" name="Kvar100" id="kvar100" min="0" onkeyup="selectContactor('kvar100')" />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="card">
+          <p style="font-weight: bold;">Final Price</p>
+          <br>
+          <div class="finalprice">
+            <div class="unit">
+              <div class="head">Units</div>
+              <div class="apfc4steps" id="apfc4count"></div>
+              <div class="apfc6steps" id="apfc6count"></div>
+              <div class="apfc9steps" id="apfc9count"></div>
+              <div class="apfc12steps" id="apfc12count"></div>
+              <div class="apfc15steps" id="apfc15count"></div>
+              <div class="cont2" id="cont2unit"></div>
+              <div class="cont5" id="cont5unit"></div>
+              <div class="cont7" id="cont7unit"></div>
+              <div class="cont12" id="cont12unit"></div>
+              <div class="cont16" id="cont16unit"></div>
+              <div class="cont20" id="cont20unit"></div>
+              <div class="cont25" id="cont25unit"></div>
+              <div class="cont33" id="cont33unit"></div>
+              <div class="cont40" id="cont40unit"></div>
+              <div class="cont50" id="cont50unit"></div>
+              <div class="cont60" id="cont60unit"></div>
+              <div class="cont75" id="cont75unit"></div>
+              <div class="cont100" id="cont100unit"></div>
+            </div>
+            <div class="unit">
+              <div class="head">X</div>
+              <div class="apfc4steps">X</div>
+              <div class="apfc6steps">X</div>
+              <div class="apfc9steps">X</div>
+              <div class="apfc12steps">X</div>
+              <div class="apfc15steps">X</div>
+              <div class="cont2">X</div>
+              <div class="cont5">X</div>
+              <div class="cont7">X</div>
+              <div class="cont12">X</div>
+              <div class="cont16">X</div>
+              <div class="cont20">X</div>
+              <div class="cont25">X</div>
+              <div class="cont33">X</div>
+              <div class="cont40">X</div>
+              <div class="cont50">X</div>
+              <div class="cont60">X</div>
+              <div class="cont75">X</div>
+              <div class="cont100"></div>
+            </div>
+            <div class="itemtype">
+              <div class="head">Type</div>
+              <div class="apfc4steps" id="apfc4steptype"></div>
+              <div class="apfc6steps" id="apfc6steptype"></div>
+              <div class="apfc9steps" id="apfc9steptype"></div>
+              <div class="apfc12steps" id="apfc12steptype"></div>
+              <div class="apfc15steps" id="apfc15steptype"></div>
+              <div class="cont2">2.5 Kvar Contactor</div>
+              <div class="cont5">5 Kvar Contactor</div>
+              <div class="cont7">7.5 Kvar Contactor</div>
+              <div class="cont12">12 Kvar Contactor</div>
+              <div class="cont16">16 Kvar Contactor</div>
+              <div class="cont20">20 Kvar Contactor</div>
+              <div class="cont25">25 Kvar Contactor</div>
+              <div class="cont33">33 Kvar Contactor</div>
+              <div class="cont40">40 Kvar Contactor</div>
+              <div class="cont50">50 Kvar Contactor</div>
+              <div class="cont60">60 Kvar Contactor</div>
+              <div class="cont75">75 Kvar Contactor</div>
+              <div class="cont100"></div>
+            </div>
+            <div class="price">
+              <div class="head">(Unit Price)</div>
+              <div class="apfc4steps"><span class="initial"><del>&#x20B9 9950</del></span>
+                <span class="discounted">&#x20B9 5273.5</span>
+                <span class="saved">*You saved 47%</span>
+              </div>
+              <div class="apfc6steps"><span class="initial"><del>&#x20B9 12600</del></span>
+                <span class="discounted">&#x20B9 6678</span>
+                <span class="saved">*You saved 47%</span>
+              </div>
+              <div class="apfc9steps"><span class="initial"><del>&#x20B9 20950</del></span>
+                <span class="discounted">&#x20B9 10894</span>
+                <span class="saved">*You saved 48%</span>
+              </div>
+              <div class="apfc12steps"><span class="initial"><del>&#x20B9 22800</del></span>
+                <span class="discounted">&#x20B9 11856</span>
+                <span class="saved">*You saved 48%</span>
+              </div>
+              <div class="apfc15steps"><span class="initial"><del>&#x20B9 29990</del></span>
+                <span class="discounted">&#x20B9 15894.7</span>
+                <span class="saved">*You saved 47%</span>
+              </div>
+              <div class="cont2"><span class="initial"><del>&#x20B9 1655</del></span>
+                <span class="discounted">&#x20B9 827.5</span>
+                <span class="saved">*You saved 50%</span>
+              </div>
+              <div class="cont5"><span class="initial"><del>&#x20B9 1680</del></span>
+                <span class="discounted">&#x20B9 840</span>
+                <span class="saved">*You saved 50%</span>
+              </div>
+              <div class="cont7"><span class="initial"><del>&#x20B9 1960</del></span>
+                <span class="discounted">&#x20B9 980</span>
+                <span class="saved">*You saved 50%</span>
+              </div>
+              <div class="cont12"><span class="initial"><del>&#x20B9 2285</del></span>
+                <span class="discounted">&#x20B9 1142.5</span>
+                <span class="saved">*You saved 50%</span>
+              </div>
+              <div class="cont16"><span class="initial"><del>&#x20B9 3100</del></span>
+                <span class="discounted">&#x20B9 1550</span>
+                <span class="saved">*You saved 50%</span>
+              </div>
+              <div class="cont20"><span class="initial"><del>&#x20B9 3500</del></span>
+                <span class="discounted">&#x20B9 1750</span>
+                <span class="saved">*You saved 50%</span>
+              </div>
+              <div class="cont25"><span class="initial"><del>&#x20B9 3990</del></span>
+                <span class="discounted">&#x20B9 1995</span>
+                <span class="saved">*You saved 50%</span>
+              </div>
+              <div class="cont33"><span class="initial"><del>&#x20B9 6250</del></span>
+                <span class="discounted">&#x20B9 3125</span>
+                <span class="saved">*You saved 50%</span>
+              </div>
+              <div class="cont40"><span class="initial"><del>&#x20B9 9990</del></span>
+                <span class="discounted">&#x20B9 4995</span>
+                <span class="saved">*You saved 50%</span>
+              </div>
+              <div class="cont50"><span class="initial"><del>&#x20B9 11240</del></span>
+                <span class="discounted">&#x20B9 5620</span>
+                <span class="saved">*You saved 50%</span>
+              </div>
+              <div class="cont60"><span class="initial"><del>&#x20B9 12950</del></span>
+                <span class="discounted">&#x20B9 6475</span>
+                <span class="saved">*You saved 50%</span>
+              </div>
+              <div class="cont75"><span class="initial"><del>&#x20B9 14970</del></span>
+                <span class="discounted">&#x20B9 7485</span>
+                <span class="saved">*You saved 50%</span>
+              </div>
+              <div class="cont100"></div>
+            </div>
+            <div class="unit">
+              <div class="head">=</div>
+              <div class="apfc4steps">=</div>
+              <div class="apfc6steps">=</div>
+              <div class="apfc9steps">=</div>
+              <div class="apfc12steps">=</div>
+              <div class="apfc15steps">=</div>
+              <div class="cont2">=</div>
+              <div class="cont5">=</div>
+              <div class="cont7">=</div>
+              <div class="cont12">=</div>
+              <div class="cont16">=</div>
+              <div class="cont20">=</div>
+              <div class="cont25">=</div>
+              <div class="cont33">=</div>
+              <div class="cont40">=</div>
+              <div class="cont50">=</div>
+              <div class="cont60">=</div>
+              <div class="cont75">=</div>
+              <div class="cont100"></div>
+            </div>
+            <div class="total">
+              <div class="head">Amount</div>
+              <div class="apfc4steps" id="apfc4stepamount"></div>
+              <div class="apfc6steps" id="apfc6stepamount"></div>
+              <div class="apfc9steps" id="apfc9stepamount"></div>
+              <div class="apfc12steps" id="apfc12stepamount"></div>
+              <div class="apfc15steps" id="apfc15stepamount"></div>
+              <div class="cont2" id="cont2total"></div>
+              <div class="cont5" id="cont5total"></div>
+              <div class="cont7" id="cont7total"></div>
+              <div class="cont12" id="cont12total"></div>
+              <div class="cont16" id="cont16total"></div>
+              <div class="cont20" id="cont20total"></div>
+              <div class="cont25" id="cont25total"></div>
+              <div class="cont33" id="cont33total"></div>
+              <div class="cont40" id="cont40total"></div>
+              <div class="cont50" id="cont50total"></div>
+              <div class="cont60" id="cont60total"></div>
+              <div class="cont75" id="cont75total"></div>
+              <div class="cont100" id="cont100total"></div>
+            </div>
+          </div>
+          <br>
+          <div><b>Total Amount:</b> <span id="finalamount"></span></div>
+        </div>
+        <div class="card">
+          <div>
+            <p>Name of company / Person <span class="required">*</span></p>
+            <input class="input-box" type="text" name="name" id="name" required />
+          </div>
+          <br />
+          <div>
+            <p>Email <span class="required">*</span></p>
+            <input class="input-box" type="email" name="email" id="email" required />
+          </div>
+          <br />
+          <div>
+            <p>City <span class="required">*</span></p>
+            <input class="input-box" type="text" name="city" id="city" required />
+          </div>
+          <br />
+          <div>
+            <p>Mobile <span class="required">*</span></p>
+            <input class="input-box" type="number" name="mobile" id="mobile" required />
+          </div>
+        </div>
+        <button class="btn" type="submit" id="btn">Submit</button>
+        <br />
+        <div class="footer">
+          *In the event of order, shall be routed through any of our nearest
+          authorised dealer
+        </div>
+      </form>
+    </section>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+      const form = document.querySelector(".contactform");
+      document.getElementById("step4").style.display = "none";
+      document.getElementById("step6").style.display = "none";
+      document.getElementById("step9").style.display = "none";
+      document.getElementById("step12").style.display = "none";
+      document.getElementById("step15").style.display = "none";
+      document.getElementById('finalamount').innerHTML = 0;
+      Array.from(document.getElementsByClassName('apfc4steps')).forEach((e) => {
+        e.style.display = "none";
+      })
+      Array.from(document.getElementsByClassName('apfc6steps')).forEach((e) => {
+        e.style.display = "none";
+      })
+      Array.from(document.getElementsByClassName('apfc9steps')).forEach((e) => {
+        e.style.display = "none";
+      })
+      Array.from(document.getElementsByClassName('apfc12steps')).forEach((e) => {
+        e.style.display = "none";
+      })
+      Array.from(document.getElementsByClassName('apfc15steps')).forEach((e) => {
+        e.style.display = "none";
+      })
+      Array.from(document.getElementsByClassName('cont2')).forEach((e) => {
+        e.style.display = "none";
+      })
+      Array.from(document.getElementsByClassName('cont5')).forEach((e) => {
+        e.style.display = "none";
+      })
+      Array.from(document.getElementsByClassName('cont7')).forEach((e) => {
+        e.style.display = "none";
+      })
+      Array.from(document.getElementsByClassName('cont12')).forEach((e) => {
+        e.style.display = "none";
+      })
+      Array.from(document.getElementsByClassName('cont16')).forEach((e) => {
+        e.style.display = "none";
+      })
+      Array.from(document.getElementsByClassName('cont20')).forEach((e) => {
+        e.style.display = "none";
+      })
+      Array.from(document.getElementsByClassName('cont25')).forEach((e) => {
+        e.style.display = "none";
+      })
+      Array.from(document.getElementsByClassName('cont33')).forEach((e) => {
+        e.style.display = "none";
+      })
+      Array.from(document.getElementsByClassName('cont40')).forEach((e) => {
+        e.style.display = "none";
+      })
+      Array.from(document.getElementsByClassName('cont50')).forEach((e) => {
+        e.style.display = "none";
+      })
+      Array.from(document.getElementsByClassName('cont60')).forEach((e) => {
+        e.style.display = "none";
+      })
+      Array.from(document.getElementsByClassName('cont75')).forEach((e) => {
+        e.style.display = "none";
+      })
+      Array.from(document.getElementsByClassName('cont100')).forEach((e) => {
+        e.style.display = "none";
+      })
+      document.getElementById("btn").disabled = true;
+      document.getElementById("btn").style.cursor = "not-allowed";
+
+      let selectedRelay = null;
+      let stepCount = null;
+      let selectedCombo = null;
+      let contactor2_5 = 0;
+      let contactor5 = 0;
+      let contactor7_5 = 0;
+      let contactor12 = 0;
+      let contactor16 = 0;
+      let contactor20 = 0;
+      let contactor25 = 0;
+      let contactor33 = 0;
+      let contactor40 = 0;
+      let contactor50 = 0;
+      let contactor60 = 0;
+      let contactor75 = 0;
+      let contactor100 = 0;
+      let apfc4Price = null;
+      let apfc6Price = null;
+      let apfc9Price = null;
+      let apfc12Price = null;
+      let apfc15Price = null;
+      let contactorPrice = null;
+      let unit = document.createElement('div');
+      let type = document.createElement('div');
+      let price = document.createElement('div');
+      let total = document.createElement('div');
+      let finalamount = 0;
+      let step4count = 0;
+      let step6count = 0;
+      let step9count = 0;
+      let step12count = 0;
+      let step15count = 0;
+
+      function valueChange(id) {
+        if (id = 'step4') {
+          apfc4Price = 5273.5;
+          step4count = document.getElementById('step4count').value && document.getElementById('step4count').value != '' ? document.getElementById('step4count').value : null;
+          document.getElementById('apfc4count').innerHTML = step4count;
+          if (step4count) {
+            Array.from(document.getElementsByClassName('apfc4steps')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById("step4").style.display = "inline";
+            document.getElementById('apfc4steptype').innerHTML = "4 Steps APFC Relay";
+            document.getElementById('apfc4stepamount').innerHTML = step4count * apfc4Price;
+          } else {
+            Array.from(document.getElementsByClassName('apfc4steps')).forEach((e) => {
+              e.style.display = "none";
+            })
+            document.getElementById("step4").style.display = "none";
+          }
+        }
+        if (id = 'step6') {
+          apfc6Price = 6678;
+          step6count = document.getElementById('step6count').value && document.getElementById('step6count').value != '' ? document.getElementById('step6count').value : null;
+          document.getElementById('apfc6count').innerHTML = step6count;
+          if (step6count) {
+            Array.from(document.getElementsByClassName('apfc6steps')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById("step6").style.display = "inline";
+            document.getElementById('apfc6steptype').innerHTML = "4 Steps APFC Relay";
+            document.getElementById('apfc6stepamount').innerHTML = step6count * apfc6Price;
+          } else {
+            Array.from(document.getElementsByClassName('apfc6steps')).forEach((e) => {
+              e.style.display = "none";
+            })
+            document.getElementById("step6").style.display = "none";
+          }
+        }
+        if (id = 'step9') {
+          apfc9Price = 10894;
+          step9count = document.getElementById('step9count').value && document.getElementById('step9count').value != '' ? document.getElementById('step9count').value : null;
+          document.getElementById('apfc9count').innerHTML = step9count;
+          if (step9count) {
+            Array.from(document.getElementsByClassName('apfc9steps')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById("step9").style.display = "inline";
+            document.getElementById('apfc9steptype').innerHTML = "9 Steps APFC Relay";
+            document.getElementById('apfc9stepamount').innerHTML = step9count * apfc9Price;
+          } else {
+            Array.from(document.getElementsByClassName('apfc9steps')).forEach((e) => {
+              e.style.display = "none";
+            })
+            document.getElementById("step9").style.display = "none";
+          }
+        }
+        if (id = 'step12') {
+          apfc12Price = 11856;
+          step12count = document.getElementById('step12count').value && document.getElementById('step12count').value != '' ? document.getElementById('step12count').value : null;
+          document.getElementById('apfc12count').innerHTML = step12count;
+          if (step12count) {
+            Array.from(document.getElementsByClassName('apfc12steps')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById("step12").style.display = "inline";
+            document.getElementById('apfc12steptype').innerHTML = "12 Steps APFC Relay";
+            document.getElementById('apfc12stepamount').innerHTML = step12count * apfc12Price;
+          } else {
+            Array.from(document.getElementsByClassName('apfc12steps')).forEach((e) => {
+              e.style.display = "none";
+            })
+            document.getElementById("step12").style.display = "none";
+          }
+        }
+        if (id = 'step15') {
+          apfc15Price = 15894.7;
+          step15count = document.getElementById('step15count').value && document.getElementById('step15count').value != '' ? document.getElementById('step15count').value : null;
+          document.getElementById('apfc15count').innerHTML = step15count;
+          if (step15count) {
+            Array.from(document.getElementsByClassName('apfc15steps')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById("step15").style.display = "inline";
+            document.getElementById('apfc15steptype').innerHTML = "15 Steps APFC Relay";
+            document.getElementById('apfc15stepamount').innerHTML = step15count * apfc15Price;
+          } else {
+            Array.from(document.getElementsByClassName('apfc15steps')).forEach((e) => {
+              e.style.display = "none";
+            })
+            document.getElementById("step15").style.display = "none";
+          }
+        }
+        calculateTotal();
+      }
+
+      //function relayType(id) {
+      //  if(id == '1ct') {
+      //    selectedRelay = '1ct';
+      //  } else if(id == '3ct') {
+      //    selectedRelay = '3ct';
+      //  }
+      //}
+
+      function selectCombo() {
+        let combo = document.getElementById('combo').value;
+        if (combo == "") {
+          selectedCombo = null;
+        } else if (combo == '4Stage') {
+          selectedCombo = "4 Stage Combo"
+        } else if (combo == '6Stage') {
+          selectedCombo = "6 Stage Combo"
+        } else if (combo == '9Stage') {
+          selectedCombo = "9 Stage Combo"
+        } else if (combo == '12Stage') {
+          selectedCombo = "12 Stage Combo"
+        } else if (combo == '15Stage') {
+          selectedCombo = "15 Stage Combo"
+        }
+      }
+
+      function selectContactor(id) {
+        if (id == 'kvar2.5') {
+          contactor2_5 = (document.getElementById(id).value && document.getElementById(id).value != '') ? document.getElementById(id).value : 0;
+          if (contactor2_5) {
+            Array.from(document.getElementsByClassName('cont2')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById('cont2unit').innerHTML = contactor2_5;
+            document.getElementById('cont2total').innerHTML = contactor2_5 * 827.5;
+          } else {
+            Array.from(document.getElementsByClassName('cont2')).forEach((e) => {
+              e.style.display = "none";
+            })
+          }
+        }
+        if (id == 'kvar5') {
+          contactor5 = (document.getElementById(id).value && document.getElementById(id).value != '') ? document.getElementById(id).value : 0;
+          if (contactor5) {
+            Array.from(document.getElementsByClassName('cont5')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById('cont5unit').innerHTML = contactor5;
+            document.getElementById('cont5total').innerHTML = contactor5 * 840;
+          } else {
+            Array.from(document.getElementsByClassName('cont5')).forEach((e) => {
+              e.style.display = "none";
+            })
+          }
+        }
+        if (id == 'kvar7.5') {
+          contactor7_5 = (document.getElementById(id).value && document.getElementById(id).value != '') ? document.getElementById(id).value : 0;
+          if (contactor7_5) {
+            Array.from(document.getElementsByClassName('cont7')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById('cont7unit').innerHTML = contactor7_5;
+            document.getElementById('cont7total').innerHTML = contactor7_5 * 980;
+          } else {
+            Array.from(document.getElementsByClassName('cont7')).forEach((e) => {
+              e.style.display = "none";
+            })
+          }
+        }
+        if (id == 'kvar12') {
+          contactor12 = (document.getElementById(id).value && document.getElementById(id).value != '') ? document.getElementById(id).value : 0;
+          if (contactor12) {
+            Array.from(document.getElementsByClassName('cont12')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById('cont12unit').innerHTML = contactor12;
+            document.getElementById('cont12total').innerHTML = contactor12 * 1142.5;
+          } else {
+            Array.from(document.getElementsByClassName('cont12')).forEach((e) => {
+              e.style.display = "none";
+            })
+          }
+        }
+        if (id == 'kvar16') {
+          contactor16 = (document.getElementById(id).value && document.getElementById(id).value != '') ? document.getElementById(id).value : 0;
+          if (contactor16) {
+            Array.from(document.getElementsByClassName('cont16')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById('cont16unit').innerHTML = contactor16;
+            document.getElementById('cont16total').innerHTML = contactor16 * 1550;
+          } else {
+            Array.from(document.getElementsByClassName('cont16')).forEach((e) => {
+              e.style.display = "none";
+            })
+          }
+        }
+        if (id == 'kvar20') {
+          contactor20 = (document.getElementById(id).value && document.getElementById(id).value != '') ? document.getElementById(id).value : 0;
+          if (contactor20) {
+            Array.from(document.getElementsByClassName('cont20')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById('cont20unit').innerHTML = contactor20;
+            document.getElementById('cont20total').innerHTML = contactor20 * 1750;
+          } else {
+            Array.from(document.getElementsByClassName('cont20')).forEach((e) => {
+              e.style.display = "none";
+            })
+          }
+        }
+        if (id == 'kvar25') {
+          contactor25 = (document.getElementById(id).value && document.getElementById(id).value != '') ? document.getElementById(id).value : 0;
+          if (contactor25) {
+            Array.from(document.getElementsByClassName('cont25')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById('cont25unit').innerHTML = contactor25;
+            document.getElementById('cont25total').innerHTML = contactor25 * 1995;
+          } else {
+            Array.from(document.getElementsByClassName('cont25')).forEach((e) => {
+              e.style.display = "none";
+            })
+          }
+        }
+        if (id == 'kvar33') {
+          contactor33 = (document.getElementById(id).value && document.getElementById(id).value != '') ? document.getElementById(id).value : 0;
+          if (contactor33) {
+            Array.from(document.getElementsByClassName('cont33')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById('cont33unit').innerHTML = contactor33;
+            document.getElementById('cont33total').innerHTML = contactor33 * 3125;
+          } else {
+            Array.from(document.getElementsByClassName('cont33')).forEach((e) => {
+              e.style.display = "none";
+            })
+          }
+        }
+        if (id == 'kvar40') {
+          contactor40 = (document.getElementById(id).value && document.getElementById(id).value != '') ? document.getElementById(id).value : 0;
+          if (contactor40) {
+            Array.from(document.getElementsByClassName('cont40')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById('cont40unit').innerHTML = contactor40;
+            document.getElementById('cont40total').innerHTML = contactor40 * 4995;
+          } else {
+            Array.from(document.getElementsByClassName('cont40')).forEach((e) => {
+              e.style.display = "none";
+            })
+          }
+        }
+        if (id == 'kvar50') {
+          contactor50 = (document.getElementById(id).value && document.getElementById(id).value != '') ? document.getElementById(id).value : 0;
+          if (contactor50) {
+            Array.from(document.getElementsByClassName('cont50')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById('cont50unit').innerHTML = contactor50;
+            document.getElementById('cont50total').innerHTML = contactor50 * 5620;
+          } else {
+            Array.from(document.getElementsByClassName('cont50')).forEach((e) => {
+              e.style.display = "none";
+            })
+          }
+        }
+        if (id == 'kvar60') {
+          contactor60 = (document.getElementById(id).value && document.getElementById(id).value != '') ? document.getElementById(id).value : 0;
+          if (contactor60) {
+            Array.from(document.getElementsByClassName('cont60')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById('cont60unit').innerHTML = contactor60;
+            document.getElementById('cont60total').innerHTML = contactor60 * 6475;
+          } else {
+            Array.from(document.getElementsByClassName('cont60')).forEach((e) => {
+              e.style.display = "none";
+            })
+          }
+        }
+        if (id == 'kvar75') {
+          contactor75 = (document.getElementById(id).value && document.getElementById(id).value != '') ? document.getElementById(id).value : 0;
+          if (contactor75) {
+            Array.from(document.getElementsByClassName('cont75')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById('cont75unit').innerHTML = contactor75;
+            document.getElementById('cont75total').innerHTML = contactor75 * 7485;
+          } else {
+            Array.from(document.getElementsByClassName('cont75')).forEach((e) => {
+              e.style.display = "none";
+            })
+          }
+        }
+        if (id == 'kvar100') {
+          contactor100 = (document.getElementById(id).value && document.getElementById(id).value != '') ? document.getElementById(id).value : 0;
+          if (contactor100) {
+            Array.from(document.getElementsByClassName('cont100')).forEach((e) => {
+              e.style.display = "inline";
+            })
+            document.getElementById('cont100unit').innerHTML = contactor100;
+            document.getElementById('cont100total').innerHTML = contactor100 * 1000;
+          } else {
+            Array.from(document.getElementsByClassName('cont100')).forEach((e) => {
+              e.style.display = "none";
+            })
+          }
+        }
+        calculateTotal();
+      }
+
+      function calculateTotal() {
+        finalamount = (step4count * apfc4Price) + (step6count * apfc6Price) + (step9count * apfc9Price) + (step12count * apfc12Price) + (step15count * apfc15Price) + contactor2_5 * 827.5 + contactor5 * 840 + contactor7_5 * 980 + contactor12 * 1142.5 + contactor16 * 1550 + contactor20 * 1750 + contactor25 * 1995 + contactor33 * 3125 + contactor40 * 4995 + contactor50 * 5620 + contactor60 * 6475 + contactor75 * 7485;
+        finalamount = finalamount > 0 ? finalamount : 0;
+        document.getElementById('finalamount').innerHTML = finalamount;
+
+        if (step4count <= 0 && step6count <= 0 && step9count <= 0 && step12count <= 0 && step15count <= 0) {
+          document.getElementById("btn").disabled = true;
+          document.getElementById("btn").style.cursor = "not-allowed";
+        } else {
+          document.getElementById("btn").disabled = false;
+          document.getElementById("btn").style.cursor = "pointer";
+        }
+      }
+
+      function sendmail(e) {
+        e.preventDefault();
+        const name = document.getElementById("name"),
+          email = document.getElementById("email"),
+          city = document.getElementById("city"),
+          mobile = document.getElementById("mobile");
+
+        Email.send({
+          SecureToken: "f9cec20b-1569-4aa8-9bae-c22c9e29ec27",
+          To: "abhardwaj@entes.in",
+          From: "akhbhardwaj.001@gmail.com",
+          Subject: `New Order from ${email.value}`,
+          Body: `<b>FROM: </b>${email.value} <br /><b>City: </b>${city.value} <br /><b>Mobile: </b>${mobile.value} <br /><br /><b>Order Details:</b> <br />
+          <b>Selected Combo -</b> ${selectedCombo}, <br />
+          <b>4 Step APFC -</b> ${step4count}, <br />
+          <b>6 Step APFC -</b> ${step6count}, <br />
+          <b>9 Step APFC -</b> ${step9count}, <br />
+          <b>12 Step APFC -</b> ${step12count}, <br />
+          <b>15 Step APFC -</b> ${step15count}, <br />
+          <b>2.5 Kvar Contactor -</b> ${contactor2_5}, <br />
+          <b>5 Kvar Contactor -</b> ${contactor5}, <br />
+          <b>7.5 Kvar Contactor -</b> ${contactor7_5}, <br />
+          <b>12 Kvar Contactor -</b> ${contactor12}, <br />
+          <b>16 Kvar Contactor -</b> ${contactor16}, <br />
+          <b>20 Kvar Contactor -</b> ${contactor20}, <br />
+          <b>25 Kvar Contactor -</b> ${contactor25}, <br />
+          <b>33 Kvar Contactor -</b> ${contactor33}, <br />
+          <b>40 Kvar Contactor -</b> ${contactor40}, <br />
+          <b>50 Kvar Contactor -</b> ${contactor50}, <br />
+          <b>60 Kvar Contactor -</b> ${contactor60}, <br />
+          <b>75 Kvar Contactor -</b> ${contactor75}, <br />
+          <br />
+          Final Price - ${finalamount}
+          `,
+        }).then((message) => window.location.replace('./thankyou.html'));
+      }
+
+      form.addEventListener("submit", sendmail);
+    </script>
+  </div>
+</body>
+
+</html>
